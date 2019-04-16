@@ -7,12 +7,15 @@
 “花呗如何还款” --“花呗怎么还款”：同义问句
 “花呗如何还款” -- “我怎么还我的花被呢”：同义问句
 “花呗分期后逾期了如何还款”-- “花呗分期后逾期了哪里还款”：非同义问句
-对于例子a，比较简单的方法就可以判定同义；对于例子b，包含了错别字、同义词、词序变换等问题，两个句子乍一看并不类似，想正确判断比较有挑战；对于例子c，两句话很类似，仅仅有一处细微的差别 “如何”和“哪里”，就导致语义不一致。
-	对称神经网络即利用Gated Recurrent Unit（GRU）对句子信息进行编码，将编码信息整合通过全连接层分类器，从而判断两句话是否表达同一种意思。
+对于例子a，比较简单的方法就可以判定同义；
+对于例子b，包含了错别字、同义词、词序变换等问题，两个句子乍一看并不类似，想正确判断比较有挑战；
+对于例子c，两句话很类似，仅仅有一处细微的差别 “如何”和“哪里”，就导致语义不一致。
 
-        试验包含4个.py源文件：training.py ，data.py,  model_gru.py  , Arg.py。两个csv数据文件 ：atec_nlp_sim_train.csv和atec_nlp_sim_train_add.csv
+对称神经网络即利用Gated Recurrent Unit（GRU）对句子信息进行编码，将编码信息整合通过全连接层分类器，从而判断两句话是否表达同一种意思。
 
-        两个二进制序列化文件word_f_less,word_dict。
+试验包含4个.py源文件：training.py ，data.py,  model_gru.py  , Arg.py。两个csv数据文件 ：atec_nlp_sim_train.csv和atec_nlp_sim_train_add.csv
+
+两个二进制序列化文件word_f_less,word_dict。这两个文件（是本人提取好的低频未登入词汇，和人民大学训练好的词向量）需要通过百度网盘下载，链接：https://pan.baidu.com/s/17kAe1Z5PtRbQmYOWIrfoIw  提取码：cq14 
 
 采用pytorch语言实现。安装：pytorch，numpy，jieba等库。
 
